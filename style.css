@@ -1,0 +1,51 @@
+input {
+    margin: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+body {
+    margin:0;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#article {
+    padding-left: 35px;
+}
+a {
+    color:rosybrown;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+    border-bottom: 5px solid bisque;
+    padding: 10px;
+    margin: 0;
+}
+#grid ol {
+    border-right:5px solid bisque;
+    width: 100px;
+    margin:0;
+    padding: 32px;
+}
+
+#grid ul {
+    padding: 15px;
+}
+
+@media(max-width:650px) {
+    #grid {
+        display:block;
+    }  
+
+    #grid ol {
+        border-right: none;
+    }
+
+    #article {
+        padding-left: 20px;
+    }
+}
